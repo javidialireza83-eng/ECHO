@@ -81,13 +81,14 @@ function createSongCard(song) {
         <div class="song-content">
 
             <h3>
+                Download : 
                 <a href="song.html?id=${song.id}">
                     ${song.title}
                 </a>
             </h3>
 
             <p>
-                singer :
+                artist :
                 <a href="artist.html?id=${song.artist.id}">
                     ${song.artist.name}
                 </a>

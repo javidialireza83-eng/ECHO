@@ -13,6 +13,11 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
+from django.shortcuts import get_object_or_404
+from django.http import FileResponse
+
+
+
 class SongListAPIView(generics.ListAPIView):
     queryset = Song.objects.all().order_by("-id")
     serializer_class = SongSerializer
@@ -101,3 +106,16 @@ class FavoriteDeleteAPIView(generics.DestroyAPIView):
 
     def get_queryset(self):
         return Favorite.objects.filter(user=self.request.user)
+    
+class DownloadSongAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, pk):
+
+        song = get_object_or_404(Song, pk=pk)
+
+        return FileResponse(
+            song.audio.open("rb"),
+            as_attachment=True,
+            filename=song.audio.name.split("/")[-1]
+        )

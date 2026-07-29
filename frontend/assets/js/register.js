@@ -48,7 +48,7 @@ form.addEventListener("submit", async (e) => {
 
     console.log("SUCCESS");
 
-    window.location.href = "login.html";
+    window.location.replace("login.html");
 
     return;
 

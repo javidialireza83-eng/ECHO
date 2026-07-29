@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import SongListAPIView, SongDetailAPIView,ArtistListAPIView,ArtistDetailAPIView,ArtistSongsAPIView,AlbumListAPIView,AlbumDetailAPIView,AlbumSongsAPIView,RegisterAPIView,FavoriteListAPIView,TestAuthView,FavoriteDeleteAPIView
+from .views import SongListAPIView, SongDetailAPIView,ArtistListAPIView,ArtistDetailAPIView,ArtistSongsAPIView,AlbumListAPIView,AlbumDetailAPIView,AlbumSongsAPIView,RegisterAPIView,FavoriteListAPIView,TestAuthView,FavoriteDeleteAPIView,DownloadSongAPIView
 
 urlpatterns = [
     path("songs/", SongListAPIView.as_view(), name="songs"),
@@ -14,6 +14,8 @@ urlpatterns = [
     path("albums/<int:pk>/songs/", AlbumSongsAPIView.as_view()),
     
     path("register/", RegisterAPIView.as_view()),
+    
+    path("songs/<int:pk>/download/",DownloadSongAPIView.as_view(),name="song-download"),
     
     path("favorites/", FavoriteListAPIView.as_view()),
     

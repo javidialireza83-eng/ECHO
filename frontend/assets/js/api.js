@@ -1,6 +1,7 @@
 const API = {
 
-    BASE_URL: "http://127.0.0.1:8000/api",
+    BASE_URL: `${window.location.origin}/api`,
+    //  BASE_URL: "http://127.0.0.1:8000/api",
 
     async getSongs() {
 
@@ -140,8 +141,68 @@ async removeFavorite(id){
     return res.ok;
 
 },
+
+async downloadSong(id) {
+
+    const token = localStorage.getItem("access");
+
+    if (!token) {
+
+        alert("برای دانلود ابتدا وارد حساب شوید.");
+
+        location.href = "login.html";
+
+        return;
+
+    }
+
+    const res = await fetch(
+        `${this.BASE_URL}/songs/${id}/download/`,
+        {
+            headers: {
+                "Authorization": "Bearer " + token
+            }
+        }
+    );
+
+    if (res.status === 401) {
+
+        alert("ابتدا وارد حساب شوید.");
+
+        location.href = "login.html";
+
+        return;
+
+    }
+
+    if (!res.ok) {
+
+        alert("خطا در دانلود");
+
+        return;
+
+    }
+
+    const blob = await res.blob();
+
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+
+    a.href = url;
+
+    // a.download = "";
+    a.download = currentSong.title + ".mp3";
+
+    document.body.appendChild(a);
+
+    a.click();
+
+    a.remove();
+
+    window.URL.revokeObjectURL(url);
+
+},
 };
-
-
 console.log("API BASE =", API.BASE_URL);
 

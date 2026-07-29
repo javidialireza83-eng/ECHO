@@ -14,6 +14,7 @@ const lyrics = document.getElementById("lyrics");
 
 const playSong = document.getElementById("playSong");
 const favoriteSong = document.getElementById("favoriteSong");
+const downloadSong = document.getElementById("downloadSong");
 
 let currentSong = null;
 
@@ -79,7 +80,13 @@ favoriteSong.onclick = async()=>{
     }
 
 };
+downloadSong.onclick = async () => {
 
+    if (!currentSong) return;
+
+    await API.downloadSong(currentSong.id);
+
+};
 async function loadRelated(){
 
     const songs = await API.getSongs();
