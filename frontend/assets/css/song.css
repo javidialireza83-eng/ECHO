@@ -1,0 +1,370 @@
+/*=========================================
+SONG PAGE
+=========================================*/
+
+.song-page{
+
+    padding:50px 0 120px;
+
+}
+
+/*=========================================
+HERO
+=========================================*/
+
+.song-hero{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/*=========================================
+COVER
+=========================================*/
+
+.song-cover{
+
+    position:relative;
+
+}
+
+.song-cover img{
+
+    width:100%;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+
+    transition:.4s;
+
+    display:block;
+
+}
+
+.song-cover:hover img{
+
+    transform:scale(1.04);
+
+    box-shadow:
+    0 30px 60px rgba(29,185,84,.25);
+
+}
+
+/*=========================================
+INFO
+=========================================*/
+
+.song-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.badge{
+
+    width:max-content;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    background:rgba(29,185,84,.15);
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.song-info h1{
+
+    font-size:56px;
+
+    font-weight:900;
+
+    line-height:1.1;
+
+}
+
+.song-info h3{
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+/*=========================================
+META
+=========================================*/
+
+.song-meta{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    margin-top:15px;
+
+}
+
+.meta-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:22px;
+
+    transition:.35s;
+
+}
+
+.meta-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--primary);
+
+}
+
+.meta-card span{
+
+    display:block;
+
+    color:var(--text-light);
+
+    font-size:13px;
+
+    margin-bottom:10px;
+
+}
+
+.meta-card h4{
+
+    color:white;
+
+    font-size:20px;
+
+}
+
+/*=========================================
+BUTTONS
+=========================================*/
+
+.song-actions{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+.song-actions button{
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    border-radius:40px;
+
+    padding:16px 34px;
+
+    transition:.3s;
+
+}
+
+.primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.primary:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 30px rgba(29,185,84,.35);
+
+}
+
+.secondary{
+
+    background:#181818;
+
+    color:white;
+
+    border:1px solid var(--border)!important;
+
+}
+
+.secondary:hover{
+
+    border-color:var(--primary)!important;
+
+    color:var(--primary);
+
+}
+
+/*=========================================
+SECTION TITLE
+=========================================*/
+
+.section-title{
+
+    margin-bottom:25px;
+
+}
+
+.section-title h2{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.section-title p{
+
+    color:var(--text-light);
+
+}
+
+/*=========================================
+LYRICS
+=========================================*/
+
+.lyrics-section{
+
+    margin-top:80px;
+
+}
+
+.lyrics-box{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    max-height:450px;
+
+    overflow:auto;
+
+}
+
+.lyrics-box pre{
+
+    white-space:pre-wrap;
+
+    font-family:"Vazirmatn",sans-serif;
+
+    color:#06f241e0;
+
+    line-height:2;
+
+}
+
+/*=========================================
+RELATED
+=========================================*/
+
+.related-songs{
+
+    margin-top:90px;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.song-hero{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+.song-cover{
+
+max-width:420px;
+
+margin:auto;
+
+
+
+}
+
+.song-meta{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.song-info h1{
+
+font-size:38px;
+
+}
+
+.song-actions{
+
+flex-direction:column;
+
+}
+
+.song-actions button{
+
+width:100%;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+}

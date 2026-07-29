@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ECHO | Music Platform</title>
+
+    <meta name="description"
+          content="Modern Music Streaming Platform">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+    <link rel="stylesheet"
+          href="assets/css/home.css">
+
+    <link rel="stylesheet"
+          href="assets/css/cards.css">
+
+    <link rel="stylesheet"
+          href="assets/css/player.css">
+
+    <link rel="stylesheet"
+          href="assets/css/responsive.css">
+
+    <link rel="stylesheet"
+          href="assets/css/animation.css">
+
+</head>
+
+<body>
+
+<div class="noise"></div>
+
+<header>
+
+    <nav class="container">
+
+        <a href="index.html"
+           class="logo">
+
+            &lt;echo/&gt;
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="music.html">
+
+                    Music
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="resume.html">
+
+                    Resume
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="nav-right">
+
+            <button id="themeToggle">
+
+                🌙
+
+            </button>
+
+            <button
+                onclick="logout()"
+                class="logout-btn">
+
+                Logout
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container hero-wrapper">
+
+        <div class="hero-left">
+
+            <span class="hero-badge">
+
+                🎧 OFFICIAL MUSIC PLATFORM
+
+            </span>
+
+            <h1>
+
+                Discover
+
+                <span>Unlimited Music</span>
+
+            </h1>
+
+            <p>
+
+                Welcome to ECHO Music.
+
+                Discover artists, albums and songs
+
+                in a modern music experience.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a
+                href="music.html"
+                class="btn-primary">
+
+                    Browse Music
+
+                </a>
+
+                <a
+                href="resume.html"
+                class="btn-secondary">
+
+                    Resume
+
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat">
+
+                    <h2>
+
+                        100+
+
+                    </h2>
+
+                    <span>
+
+                        Songs
+
+                    </span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>
+
+                        20+
+
+                    </h2>
+
+                    <span>
+
+                        Artists
+
+                    </span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>
+
+                        10+
+
+                    </h2>
+
+                    <span>
+
+                        Albums
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="hero-image">
+
+                <img
+
+                src="assets/img/artist/artist.jpg"
+
+                alt="Artist">
+
+            </div>
+
+            <!-- <div class="floating-card">
+
+                <img
+
+                src="assets/img/covers/song1.jpg"
+
+                alt="Album">
+
+                <div>
+
+                    <h4>
+
+                        Lost In Code
+
+                    </h4>
+
+                    <span>
+
+                        Latest Release
+
+                    </span>
+
+                </div>
+
+            </div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FEATURED SONGS ================= -->
+
+<!-- <section class="container home-section">
+
+    <div class="section-header">
+
+        <h2>
+
+            Featured Songs
+
+        </h2>
+
+        <a href="music.html">
+
+            View All →
+
+        </a>
+
+    </div>
+
+    <div
+
+    id="featuredSongs"
+
+    class="music-grid">
+
+    </div>
+
+</section> -->
+<!-- ================= POPULAR ARTISTS ================= -->
+
+<!-- <section class="container home-section">
+
+    <div class="section-header">
+
+        <h2>
+
+            Popular Artists
+
+        </h2>
+
+        <a href="music.html">
+
+            Explore →
+
+        </a>
+
+    </div>
+
+    <div
+        id="popularArtists"
+        class="artist-grid">
+
+    </div>
+
+</section> -->
+
+
+<!-- ================= LATEST ALBUMS ================= -->
+
+<!-- <section class="container home-section">
+
+    <div class="section-header">
+
+        <h2>
+
+            Latest Albums
+
+        </h2>
+
+        <a href="music.html">
+
+            View All →
+
+        </a>
+
+    </div>
+
+    <div
+        id="latestAlbums"
+        class="album-grid">
+
+    </div>
+
+</section> -->
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-home">
+
+    <div class="container">
+
+        <div class="about-wrapper">
+
+            <div class="about-left">
+
+                <span>
+
+                    ABOUT ECHO
+
+                </span>
+
+                <h2>
+
+                    Code.
+                    Music.
+                    Emotion.
+
+                </h2>
+
+                <p>
+
+                  اِکو فقط یک پلتفرم پخش موسیقی نیست؛ بلکه نمایشی از توانایی‌ها، خلاقیت و مسیر حرفه‌ای من در دو حوزه برنامه‌نویسی و موسیقی است<br>اِکو فضایی است که در آن می‌توانیم پروژه‌های برنامه‌نویسی، آثار موسیقی، مهارت‌های فنی و خلاقیت های خود را در کنار هم به نمایش بگذاریم تا تصویری واقعی از توانایی‌ها و استعدادهایمان برای کارفرمایان، شرکت‌ها و علاقه‌مندان ایجادکنیم
+                 <br> ECHO is more than a music streaming platform; it is a digital space dedicated to showcasing our expertise, creativity, and professional growth in both software development and music.
+                  It brings together programming projects, musical productions, technical skills, and creative achievements in one place, allowing employers, organizations, and the community to discover our talents through a unified and professional experience.
+                 
+
+                </p>
+
+                <!-- <a
+                    href="resume.html"
+                    class="btn-primary">
+
+                    Read More
+
+                </a> -->
+
+            </div>
+
+            <div class="about-right">
+
+                <div class="about-card">
+
+                    <h3>
+
+                        ⚡ Fast API
+
+                    </h3>
+
+                    <p>
+
+                        Django REST Framework
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <h3>
+
+                        🎵 Music Library
+
+                    </h3>
+
+                    <p>
+
+                        Songs • Albums • Artists
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <h3>
+
+                        📱 Responsive
+
+                    </h3>
+
+                    <p>
+
+                        Desktop • Tablet • Mobile
+
+                    </p>
+
+                </div>
+
+                <div class="about-card">
+
+                    <h3>
+
+                        🌙 Dark Theme
+
+                    </h3>
+
+                    <p>
+
+                        Green & Black Design
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-wrapper">
+
+        <div class="footer-brand">
+
+            <h2>
+
+                &lt;echo/&gt;
+
+            </h2>
+
+            <p>
+
+                Modern Music Streaming Platform
+                built with Django REST Framework.
+
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>
+
+                Navigation
+
+            </h3>
+
+            <a href="index.html">
+
+                Home
+
+            </a>
+
+            <a href="music.html">
+
+                Music
+
+            </a>
+
+            <a href="resume.html">
+
+                Resume
+
+            </a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>
+
+                Library
+
+            </h3>
+
+            <a href="music.html">
+
+                Songs
+
+            </a>
+
+            <a href="#">
+
+                Artists
+
+            </a>
+
+            <a href="#">
+
+                Albums
+
+            </a>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>
+
+                Follow
+
+            </h3>
+
+            <div class="social-icons">
+
+                <a href="#">🐙</a>
+
+                <a href="#">📷</a>
+
+                <a href="#">🎵</a>
+
+                <a href="#">▶</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 ECHO Music • All Rights Reserved
+
+    </div>
+
+</footer>
+
+<!-- ================= Scripts ================= -->
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/home.js"></script>
+
+</body>
+
+</html>

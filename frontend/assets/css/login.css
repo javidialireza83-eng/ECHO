@@ -1,0 +1,199 @@
+
+/*=========================================
+LOGIN PAGE
+=========================================*/
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 20px;
+
+    background:
+    radial-gradient(circle at top left,#1DB95422,transparent 35%),
+    radial-gradient(circle at bottom right,#2563eb22,transparent 35%),
+    var(--bg);
+
+}
+
+/*=========================================
+CARD
+=========================================*/
+
+.login-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:45px;
+
+    box-shadow:var(--shadow);
+
+    backdrop-filter:blur(20px);
+
+}
+
+.login-card .logo{
+
+    display:block;
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.login-card h1{
+
+    text-align:center;
+
+    font-size:2.2rem;
+
+    margin-bottom:8px;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    margin-bottom:35px;
+
+}
+
+/*=========================================
+INPUTS
+=========================================*/
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    font-size:15px;
+
+}
+
+.input-group input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(29,185,84,.15);
+
+}
+
+/*=========================================
+BUTTON
+=========================================*/
+
+.login-card button{
+
+    width:100%;
+
+    margin-top:10px;
+
+}
+
+/*=========================================
+MESSAGE
+=========================================*/
+
+#msg{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+/*=========================================
+FOOTER
+=========================================*/
+
+.login-footer{
+
+    margin-top:28px;
+
+    text-align:center;
+
+}
+
+.login-footer a{
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+
+.login-footer a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:480px){
+
+    .login-card{
+
+        padding:30px 22px;
+
+    }
+
+    .login-card h1{
+
+        font-size:1.8rem;
+
+    }
+
+}

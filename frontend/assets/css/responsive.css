@@ -1,0 +1,692 @@
+/*=========================================
+RESPONSIVE
+Mobile First
+=========================================*/
+
+*{
+
+    max-width:100%;
+
+}
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+    display:block;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+}
+@media (max-width:1200px){
+
+.container{
+
+    width:95%;
+
+}
+
+.playlist{
+
+    width:280px;
+
+}
+
+.hero{
+
+    gap:30px;
+
+}
+
+}
+@media (max-width:992px){
+
+nav{
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.nav-links{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.latest-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.song-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+.artist-header{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.album-header{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.song-cover{
+
+    margin:auto;
+
+}
+
+.album-cover{
+
+    margin:auto;
+
+}
+
+.artist-header img{
+
+    margin:auto;
+
+}
+
+.playlist{
+
+    display:none;
+
+}
+
+.music-grid{
+
+    grid-template-columns:
+
+    repeat(2,1fr);
+
+}
+
+}
+@media (max-width:768px){
+
+.container{
+
+    width:94%;
+
+}
+
+header{
+
+    padding:10px 0;
+
+}
+
+nav{
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.logo{
+
+    font-size:1.5rem;
+
+}
+
+.nav-links{
+
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.nav-links li{
+
+    width:46%;
+
+}
+
+.nav-links a,
+
+.nav-links button{
+
+    width:100%;
+
+    text-align:center;
+}
+}
+.hero{
+
+    min-height:auto;
+
+    padding:50px 0;
+
+}
+
+.hero h1{
+
+    font-size:2.2rem;
+
+}
+
+.hero p{
+
+    font-size:1rem;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.hero-buttons a,
+
+.hero-buttons button{
+
+    width:100%;
+
+}
+.music-grid{
+
+    grid-template-columns:1fr;
+
+    gap:20px;
+
+}
+.song-meta{
+
+    grid-template-columns:1fr;
+
+}
+
+.song-actions{
+
+    flex-direction:column;
+
+}
+
+.song-actions button{
+
+    width:100%;
+
+}
+
+.meta-card{
+
+    text-align:center;
+
+}
+.artist-stats{
+
+    flex-direction:column;
+
+}
+
+.album-meta{
+
+    flex-direction:column;
+
+}
+
+.album-actions{
+
+    flex-direction:column;
+
+}
+
+.album-actions button{
+
+    width:100%;
+
+}
+.player{
+
+    height:auto;
+
+    padding:15px;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.player-left{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.player-center{
+
+    width:100%;
+
+}
+
+.player-right{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+}
+.auth-card{
+
+    width:100%;
+
+}
+
+input{
+
+    font-size:16px;
+
+}
+footer{
+
+    padding:25px;
+
+    font-size:.9rem;
+
+}
+/*=========================================
+Small Mobile (576px)
+=========================================*/
+
+@media (max-width:576px){
+
+.container{
+
+    width:95%;
+
+}
+
+.logo{
+
+    font-size:1.3rem;
+
+}
+
+.nav-links{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.nav-links li{
+
+    width:100%;
+
+}
+
+.nav-links a,
+.nav-links button{
+
+    width:100%;
+
+    padding:12px;
+
+    font-size:.95rem;
+
+}
+
+/* Hero */
+
+.hero{
+
+    padding:40px 0;
+
+}
+
+.hero h1{
+
+    font-size:1.8rem;
+
+    line-height:1.3;
+
+}
+
+.hero p{
+
+    font-size:.95rem;
+
+}
+
+/* Cards */
+
+.song-card{
+
+    border-radius:18px;
+
+}
+
+.song-content{
+
+    padding:15px;
+
+}
+
+.song-content h3{
+
+    font-size:1rem;
+
+}
+
+.song-meta{
+
+    flex-direction:column;
+
+    gap:8px;
+
+    align-items:flex-start;
+
+}
+
+/* Artist */
+
+.artist-header h1{
+
+    font-size:2rem;
+
+}
+
+.artist-header p{
+
+    font-size:.9rem;
+
+}
+
+.artist-header img{
+
+    width:220px;
+
+}
+
+/* Album */
+
+.album-info h1{
+
+    font-size:2rem;
+
+}
+
+.album-cover{
+
+    max-width:260px;
+
+    margin:auto;
+
+}
+
+.track{
+
+    grid-template-columns:35px 1fr auto;
+
+    gap:10px;
+
+    padding:14px;
+
+}
+
+.track button{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+/* Song */
+
+.song-info h1{
+
+    font-size:2rem;
+
+}
+
+.song-info h3{
+
+    font-size:1rem;
+
+}
+
+.lyrics-box{
+
+    max-height:260px;
+
+}
+
+/* Playlist */
+
+.play-item{
+
+    padding:10px;
+
+}
+
+.play-item img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+/* Player */
+
+.player{
+
+    padding:12px;
+
+}
+
+.player-left img{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+.player button{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+#playBtn{
+
+    width:52px;
+
+    height:52px;
+
+}
+
+.player-controls{
+
+    gap:10px;
+
+}
+
+.progress-bar{
+
+    height:5px;
+
+}
+
+.player-right{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.volume{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+#volume{
+
+    width:100%;
+
+}
+
+/* Forms */
+
+.auth-card{
+
+    padding:22px;
+
+}
+
+.auth-logo h1{
+
+    font-size:1.8rem;
+
+}
+
+input{
+
+    height:48px;
+
+}
+
+.auth-btn{
+
+    height:48px;
+
+}
+
+}
+@media (max-width:400px){
+
+.hero h1{
+
+    font-size:1.5rem;
+
+}
+
+.song-info h1{
+
+    font-size:1.7rem;
+
+}
+
+.artist-header h1{
+
+    font-size:1.7rem;
+
+}
+
+.album-info h1{
+
+    font-size:1.7rem;
+
+}
+
+.meta-card{
+
+    padding:15px;
+
+}
+
+.song-actions button{
+
+    font-size:.9rem;
+
+}
+
+.player-left h3{
+
+    font-size:.9rem;
+
+}
+
+.player-left p{
+
+    font-size:.8rem;
+
+}
+
+}
+@media (max-height:500px){
+
+.hero{
+
+    min-height:auto;
+
+    padding:30px 0;
+
+}
+
+.player{
+
+    position:relative;
+
+}
+
+.song-cover{
+
+    position:relative;
+
+}
+
+}
