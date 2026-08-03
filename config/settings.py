@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     if host.strip()
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "https://backend-cic-echo-music.runflare.cloud",
+    "backend-qh7-echo-music.runflare.cloud",
 ]
 
 # Application definition
