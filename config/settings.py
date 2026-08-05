@@ -29,15 +29,14 @@ DEBUG = os.getenv("DEBUG") == "True"
 
 # ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
 ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.getenv("ALLOWED_HOSTS", "").split(",")
-    if host.strip()
+    "echo-music.ir",
+    "www.echo-music.ir",
+    "backend-n8o-echo-music.runflare.cloud",
 ]
-
 CSRF_TRUSTED_ORIGINS = [
-    origin.strip()
-    for origin in os.getenv("CSRF_TRUSTED_ORIGINS", "").split(",")
-    if origin.strip()
+    "https://echo-music.ir",
+    "https://www.echo-music.ir",
+    "https://backend-n8o-echo-music.runflare.cloud",
 ]
 
 CORS_ALLOWED_ORIGINS = [
