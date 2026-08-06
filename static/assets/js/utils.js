@@ -1,4 +1,4 @@
-// assets/js/utils.js
+// /static/assets/js/utils.js
 
 function formatTime(sec){
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Register | ECHO</title>
+<title>Login | ECHO</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -16,8 +15,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/login.css">
+<link rel="stylesheet" href="/static/assets/css/style.css">
+<link rel="stylesheet" href="/static/assets/css/login.css">
 
 </head>
 
@@ -35,18 +34,17 @@
 
 <h1>
 
-Create Account
+Welcome Back
 
 </h1>
 
 <p>
 
-Join ECHO Music Platform
+Login to continue listening.
 
 </p>
 
-<form id="registerForm">
-
+<form id="loginForm">
 
 <div class="input-group">
 
@@ -55,19 +53,7 @@ Join ECHO Music Platform
 <input
 type="text"
 id="username"
-placeholder="Choose username"
-required>
-
-</div>
-
-<div class="input-group">
-
-<label>Email</label>
-
-<input
-type="email"
-id="email"
-placeholder="example@email.com"
+placeholder="Enter username"
 required>
 
 </div>
@@ -79,19 +65,7 @@ required>
 <input
 type="password"
 id="password"
-placeholder="Password"
-required>
-
-</div>
-
-<div class="input-group">
-
-<label>Confirm Password</label>
-
-<input
-type="password"
-id="password2"
-placeholder="Confirm password"
+placeholder="Enter password"
 required>
 
 </div>
@@ -100,7 +74,7 @@ required>
 type="submit"
 class="primary">
 
-Create Account
+Login
 
 </button>
 
@@ -112,11 +86,11 @@ Create Account
 
 <p>
 
-Already have an account?
+Don't have an account?
 
-<a href="login.html">
+<a href="register.html">
 
-Login
+Create Account
 
 </a>
 
@@ -128,11 +102,8 @@ Login
 
 </div>
 
-<!-- <script src="assets/js/register.js"></script> -->
-<script src="assets/js/api.js"></script>
-<script src="assets/js/register.js"></script>
+<script src="/static/assets/js/login.js"></script>
 
 </body>
 
 </html>
-

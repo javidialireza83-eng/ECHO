@@ -6,8 +6,8 @@ const songs = [
         genre: "Electronic",
         duration: "03:42",
         release: "2026",
-        cover: "assets/img/covers/song1.jpg",
-        file: "assets/music/song1.mp3",
+        cover: "/static/assets/img/covers/song1.jpg",
+        file: "/static/assets/music/song1.mp3",
         lyrics: `
 
 Lost in code...
@@ -26,8 +26,8 @@ Every dream...
         genre: "Lo-Fi",
         duration: "04:11",
         release: "2026",
-        cover: "assets/img/covers/song2.jpg",
-        file: "assets/music/song2.mp3",
+        cover: "/static/assets/img/covers/song2.jpg",
+        file: "/static/assets/music/song2.mp3",
         lyrics: `
 
 Midnight rain...
@@ -44,8 +44,8 @@ Falling slowly...
         genre:"Pop",
         duration:"03:18",
         release:"2026",
-        cover:"assets/img/covers/song3.jpg",
-        file:"assets/music/song3.mp3",
+        cover:"/static/assets/img/covers/song3.jpg",
+        file:"/static/assets/music/song3.mp3",
         lyrics:`
 
 Broken syntax...

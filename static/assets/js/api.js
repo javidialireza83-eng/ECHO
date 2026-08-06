@@ -2,7 +2,6 @@ const API = {
 
     // BASE_URL: `${window.location.origin}/api`,
     //  BASE_URL: "http://127.0.0.1:8000/api",
-    // BASE_URL: "backend-n8o-echo-music.runflare.cloud",
     BASE_URL: "https://echo-music.ir/api",
 
     async getSongs() {
